@@ -1,0 +1,188 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Lexend", system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}
+
+#main {
+  position: relative;
+  overflow: hidden;
+}
+
+/* Gradient background applied to all sections */
+#page, #page1, #page2, #page3 {
+  position: relative;
+  height: 100vh;
+  width: 100vw;
+  background: linear-gradient(to bottom, #a1c4fd, #fbc2eb);
+  color: #000;
+}
+
+#spline-wrap {
+  position: relative;
+  z-index: 9;
+  height: 100vh;
+  width: 100vw;
+  overflow: hidden;
+}
+
+#spline-wrap spline-viewer {
+  height: 100%;
+  width: 100%;
+  display: block;
+}
+
+#loop {
+  display: flex;
+  position: absolute;
+  top: 30%;
+  height: 25%;
+  width: 100%;
+  font-size: clamp(42px, 10vw, 100px);
+  white-space: nowrap;
+}
+
+#loop h1 {
+  font-weight: 500;
+  animation: anim 15s linear infinite;
+}
+
+#loop h1 span {
+  -webkit-text-stroke: 1.2px #000;
+  color: transparent;
+  font-weight: 700;
+}
+
+@keyframes anim {
+  0% { transform: translateX(0%); }
+  100% { transform: translateX(-100%); }
+}
+
+#nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 7%;
+  width: 100%;
+  position: fixed;
+  z-index: 99;
+  padding: 0 30px;
+}
+
+#nav h3 {
+  font-weight: 700;
+  font-size: 22px;
+  color: #000;
+}
+
+#nav button {
+  padding: 10px 20px;
+  border-radius: 50px;
+  background-color: #000;
+  color: #fff;
+  border: none;
+  font-weight: 600;
+}
+
+#page h3 {
+  position: absolute;
+  top: 55%;
+  left: 5%;
+  font-weight: 400;
+  color: #333;
+}
+
+#page h4 {
+  position: absolute;
+  top: 62%;
+  left: 25%;
+  font-weight: 500;
+  color: #000;
+}
+
+#page1 #right-text {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+#page1 #right-text h3 {
+  font-weight: 400;
+  color: #333;
+}
+
+#page1 #right-text h1 {
+  line-height: 1.5;
+  font-size: clamp(32px, 6vw, 50px);
+  font-weight: 600;
+}
+
+#page1 #left-text {
+  position: absolute;
+  top: 50%;
+  right: 10%;
+  text-align: end;
+}
+
+#page1 #left-text h1 {
+  font-size: clamp(32px, 6vw, 50px);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+#page1 #left-text h3 {
+  color: #333;
+  font-weight: 400;
+}
+
+#page2 #text1 {
+  position: absolute;
+  top: 30%;
+  left: 10%;
+}
+
+#page2 #text1 h3 {
+  color: #333;
+  font-weight: 400;
+}
+
+#page2 #text1 h1 {
+  font-size: clamp(36px, 7vw, 60px);
+  line-height: 1.5;
+  font-weight: 600;
+}
+
+#page2 #text2 {
+  position: absolute;
+  top: 55%;
+  right: 10%;
+  text-align: end;
+}
+
+#page2 #text2 p {
+  color: #333;
+  font-weight: 400;
+}
+
+#page3 #text3 {
+  position: absolute;
+  top: 40%;
+  right: 10%;
+  text-align: end;
+}
+
+#page3 #text3 h3 {
+  color: #333;
+  font-weight: 400;
+}
+
+#page3 #text3 h1 {
+  font-size: clamp(40px, 8vw, 70px);
+  font-weight: 700;
+}
