@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FactLens – an AI lens that verifies news for truth and clarity</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+  <script type="module" src="https://unpkg.com/@splinetool/viewer@^1/build/spline-viewer.js"></script>
+</head>
+<body>
+  <div id="nav">
+    <h3><b>FACT</b>LENS</h3>
+    <button>Made by Team Innov8</button>
+  </div>
+
+  <div id="main" data-scroll-container>
+    <div id="page" data-scroll-section>
+      <div id="loop">
+        <h1><b>FACTLENS</b> IS THE <b><i>REAL</i></b> <span>TRUTH</span> BEHIND THE <span><i>HEADLINES.</i></span></h1>
+        <h1><b>FACTLENS</b> IS THE <b><i>REAL</i></b> <span>TRUTH</span> BEHIND THE <span><i>HEADLINES.</i></span></h1>
+        <h1><b>FACTLENS</b> IS THE <b><i>REAL</i></b> <span>TRUTH</span> BEHIND THE <span><i>HEADLINES.</i></span></h1>
+      </div>
+
+      <h3>FACTLENS WORKS AS A TRUSTED COMPANION THAT CAN <br> UNCOVER FACTS, EXPOSE FALLACIES, AND ENSURE <br> RESPONSIBLE JOURNALISM.</h3>
+
+      <div id="spline-wrap">
+        <spline-viewer
+          id="spline"
+          url="https://prod.spline.design/ABmpm4Zqde9g3MM7/scene.splinecode"
+          loading-anim
+          events-target="none">
+        </spline-viewer>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
