@@ -1,47 +1,175 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>FactLens – an AI lens that verifies news for truth and clarity</title>
-  <link rel="stylesheet" href="style.css" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Lexend:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
-  <script type="module" src="https://unpkg.com/@splinetool/viewer@^1/build/spline-viewer.js"></script>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FactLens:  AI-Powered Fact-Checking</title>
+    <link rel="shortcut icon" href="./icon.png" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+   <script type="module" src="https://unpkg.com/@splinetool/viewer@^1/build/spline-viewer.js"></script>
+    <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-  <div id="nav">
-    <h3><b>FACT</b>LENS</h3>
-    <button>Made by Team Innov8</button>
-  </div>
+    <div id="loader">
+        <h1>VERIFY</h1>
+        <h1>EVIDENCE</h1>
+        <h1>TRUTH</h1>
+    </div>
 
-  <div id="main" data-scroll-container>
-    <div id="page" data-scroll-section>
-      <div id="loop">
-        <h1><b>FACTLENS</b> IS THE <b><i>REAL</i></b> <span>TRUTH</span> BEHIND THE <span><i>HEADLINES.</i></span></h1>
-        <h1><b>FACTLENS</b> IS THE <b><i>REAL</i></b> <span>TRUTH</span> BEHIND THE <span><i>HEADLINES.</i></span></h1>
-        <h1><b>FACTLENS</b> IS THE <b><i>REAL</i></b> <span>TRUTH</span> BEHIND THE <span><i>HEADLINES.</i></span></h1>
-      </div>
+    <div id="fixed-image"></div>
 
-      <h3>FACTLENS WORKS AS A TRUSTED COMPANION THAT CAN <br> UNCOVER FACTS, EXPOSE FALLACIES, AND ENSURE <br> RESPONSIBLE JOURNALISM.</h3>
+    <div id="main">
+        <div id="page1">
+            <nav>
+                <img src="./logo.png" alt="FactLens AI" class="brand-logo" />
+                <div id="nav-part2">
+                <h4><a href="#features">Features</a></h4>
+                <h4><a href="#about">About</a></h4>
+                <h4><a href="#contact">Contact</a></h4>
 
-      <div id="spline-wrap">
-        <spline-viewer
-          id="spline"
-          url="https://prod.spline.design/ABmpm4Zqde9g3MM7/scene.splinecode"
-          loading-anim
-          events-target="none">
-        </spline-viewer>
-      </div>
+                </div>
+                <h3>Menu</h3>
+            </nav>
+
+            <div id="center">
+                <div id="left">
+                    <h3>FactLens is an AI-powered fact-checking assistant that extracts claims, searches credible sources, and delivers transparent verdicts with confidence scores.</h3>
+                </div>
+                <div id="right">
+                    <h1>CHECK<br>THE<br>FACTS</h1>
+                </div>
+            </div>
+
+            <div id="hero-shape">
+                <div id="hero-1"></div>
+                <div id="hero-2"></div>
+                <div id="hero-3"></div>
+            </div>
+            <video autoplay loop muted playsinline class="hero-video">
+            <source src="./video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+            </video>
+
+        </div>
+
+        <div id="page2">
+            <div id="moving-text">
+                <div class="con">
+                    <h1>FACT-CHECKING</h1>
+                    <div id="gola"></div>
+                    <h1>EVIDENCE</h1>
+                    <div id="gola"></div>
+                    <h1>TRANSPARENCY</h1>
+                    <div id="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>FACT-CHECKING</h1>
+                    <div id="gola"></div>
+                    <h1>EVIDENCE</h1>
+                    <div id="gola"></div>
+                    <h1>TRANSPARENCY</h1>
+                    <div id="gola"></div>
+                </div>
+                <div class="con">
+                    <h1>FACT-CHECKING</h1>
+                    <div id="gola"></div>
+                    <h1>EVIDENCE</h1>
+                    <div id="gola"></div>
+                    <h1>TRANSPARENCY</h1>
+                    <div id="gola"></div>
+                </div>
+            </div>
+
+            <div id="page2-bottom">
+                <h1>We combine language models with credible sources to analyze claims and reduce misinformation across news, business, politics, and social media.</h1>
+                <div id="bottom-part2">
+                    <img src="https://uploads-ssl.webflow.com/64d3dd9edfb41666c35b15b7/64d3dd9edfb41666c35b15d1_Holding_thumb-p-500.jpg" alt="">
+                    <p>Upload an article or paste a link. FactLens extracts the key statements, finds corroborating or refuting evidence, flags logical fallacies, and produces an explainable verdict with a confidence score.</p>
+                </div>
+            </div>
+
+            <div id="gooey"></div>
+        </div>
+
+<div id="page3">
+  <div id="elem-container">
+    <div id="elem1" class="elem" data-image="./claimextraction.jpg">
+      <div class="overlay"></div>
+      <h2>Claim Extraction</h2>
+    </div>
+
+    <div class="elem" data-image="./evidencesearch.jpg">
+      <div class="overlay"></div>
+      <h2>Evidence Search</h2>
+    </div>
+
+    <div class="elem" data-image="./report.jpg">
+      <div class="overlay"></div>
+      <h2>Credibility Tiers</h2>
+    </div>
+
+    <div class="elem" data-image="./fallacy.jpg">
+      <div class="overlay"></div>
+      <h2>Fallacy Detection</h2>
+    </div>
+
+    <div class="elem" data-image="./confidencescores.jpg">
+      <div class="overlay"></div>
+      <h2>Confidence Scores</h2>
+    </div>
+
+    <div class="elem" data-image="./verdict.jpg">
+      <div class="overlay"></div>
+      <h2>Explainable Verdicts</h2>
+    </div>
+
+    <div class="elem" data-image="./report.jpg">
+      <div class="overlay"></div>
+      <h2>Shareable Reports</h2>
     </div>
   </div>
+</div>
 
-  <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/gsap.min.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.5/ScrollTrigger.min.js"></script>
-  <script src="script.js"></script>
+        <div id="page4">
+            <div class="swiper mySwiper">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">News</div>
+                    <div class="swiper-slide">Politics</div>
+                    <div class="swiper-slide">Business</div>
+                    <div class="swiper-slide">Social</div>
+                    <div class="swiper-slide">Research</div>
+                    <div class="swiper-slide">Education</div>
+                    <div class="swiper-slide">Developers</div>
+                </div>
+            </div>
+        </div>
+
+        <div id="page5"></div>
+
+        <div id="full-scr">
+            <div id="full-div1"></div>
+        </div>
+    </div>
+    <div id="spline-container">
+    <spline-viewer url="https://prod.spline.design/ec29d636-d902-4fc2-898b-628db49460ac/scene.splinecode"></spline-viewer>
+   </div>
+
+    <div id="footer">
+        <div id="footer-div"></div>
+        <h1 class="footer-title">
+  <img src="./logo.png" alt="FactLens" class="footer-logo">
+  <span>Fact</span><span>Lens</span>
+</h1>
+
+        <div id="footer-bottom"></div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/locomotive-scroll@3.5.4/dist/locomotive-scroll.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
